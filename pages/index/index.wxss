@@ -1,0 +1,9 @@
+/**index.wxss**/
+.nav{
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+}
+/* .item{
+padding: 20px;
+} */
