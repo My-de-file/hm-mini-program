@@ -1,6 +1,5 @@
-<!--logs.wxml-->
-<view class="container log-list">
-  <block wx:for="{{logs}}" wx:for-item="log">
-    <text class="log-item">{{index + 1}}. {{log}}</text>
-  </block>
+<sech-input/>
+<view class="classify" wx:if='{{navs_data.length>1}}'>
+<view class="navs"><view wx:for='{{navs_data}}' wx:key='id' bindtap="handeltap" data-commo="{{item.children}}">{{item.cat_name}}</view></view>
+<GoodsCategory demon='{{commo_data}}'></GoodsCategory>
 </view>

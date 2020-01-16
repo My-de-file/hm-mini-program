@@ -1,8 +1,17 @@
-.log-list {
+.classify{
   display: flex;
-  flex-direction: column;
-  padding: 40rpx;
 }
-.log-item {
-  margin: 10rpx;
+.navs{
+  width: 182rpx;
+  padding-top: 17rpx;
+  background-color: #F3F3F3;
+}
+.navs view{
+  margin-bottom: 37rpx;
+  widows: 100%;
+  text-align: center;
+  font-size: 28rpx;
+}
+.navs view:hover{
+  border-left: 2px solid #f00;
 }

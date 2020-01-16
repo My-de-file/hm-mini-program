@@ -1,6 +1,26 @@
-<view class="nav">
-<view class="item">项目</view>
-<view class="item">文件</view>
-<view class="item">编辑</view>
-<view class="item">工具</view>
+<sech-input/>
+<!-- 轮播图 -->
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" indicator-active-color="#fff" autoplay="{{true}}" interval="3000">
+  <swiper-item wx:for='{{swiper_list}}' wx:key='goods_id'>
+    <navigator url="{{item.navigator_url}}">
+      <image src="{{item.image_src}}" mode="scaleToFill"></image>
+    </navigator>
+  </swiper-item>
+</swiper>
+<!-- 分类 -->
+<view class="btn-area">
+  <view wx:for='{{classify_list}}' wx:key='index'>
+    <navigator url="{{item.navigator_url}}">
+      <image src="{{item.image_src}}"></image>
+    </navigator>
+  </view>
+</view>
+<!-- 时尚女装标题 -->
+<view class='content' wx:for='{{index_list}}' wx:key='index'>
+  <view><image src="{{item.floor_title.image_src}}"></image></view>
+  <view class='content-left'>
+    <view wx:for='{{item.product_list}}' wx:key='index' wx:for-item='v'>
+    <navigator url="{{v.navigator_url}}"><image src="{{v.image_src}}"></image></navigator>
+    </view>
+  </view>
 </view>

@@ -1,0 +1,9 @@
+<!--components/GoodsCategory/GoodsCategory.wxml-->
+<view class="Goods" wx:if='{{demon.length > 1}}'>
+  <view>
+    <view>1</view>
+    <view>
+    <view><image></image><span></span></view>
+    </view>
+  </view>
+</view>
